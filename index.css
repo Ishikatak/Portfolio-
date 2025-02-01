@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #100a38;
+    --bg-color: #435f63;
     --snd-bg-color: #090b0f;
     --text-color: #fdfdfd;
     --main-color: #59B2F4;
@@ -91,7 +91,7 @@ section {
 }
 
 span {
-    color: var(--main-color);
+    color: white;
 }
 
 .home-content h1 {
@@ -129,16 +129,16 @@ span {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: .3rem solid black;
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--main-color);
+    color:white;
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
 
 .social-media a:hover {
-    background: var(--main-color);
+    background-color:#59B2F4;
     color: var(--snd-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
@@ -146,11 +146,11 @@ span {
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: var(--main-color);
+    background: rgb(41, 33, 33);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
-    color: var(--bg-color);
+    color:white;
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
@@ -162,19 +162,19 @@ span {
 
 .about {
     padding: 30px 20px; /* Reduced section padding */
-    background-color: #100a38; /* Light background color */
+    background-color:#435f63; /* Light background color */
     text-align: center; /* Center alignment for all text */
 }
 
 .about .heading {
-    font-size: 4rem; /* Heading ka font size */
-    font-weight: bold; /* Bold font for the heading */
-    margin-bottom: 0; /* Removed gap below the heading */
-    color: #ffffff; /* Heading ka color */
+    font-size: 4rem;
+    font-weight: bold; 
+    color: black;
+    margin-bottom: -230px; 
 }
 
 .about .heading span {
-    color: #f4f4f4; /* Different color for "ME" span */
+    color: black; /* Different color for "ME" span */
 }
 
 #about p {
@@ -191,7 +191,10 @@ span {
 
 
 .services h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    font-size: 40px;
+    color:rgb(0, 0, 0);
+    /* margin-top: -300px; */
 }
 
 .services-container {
@@ -210,6 +213,9 @@ span {
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    
+
+
 }
 
 .services-container .services-box:hover {
@@ -217,10 +223,10 @@ span {
     transform: scale(1.02);
 }
 
-.services-box i {
+ .services-box i {
     font-size: 7rem;
     color: var(--main-color);
-}
+} 
 
 .services-box h3 {
     font-size: 2.6rem;
@@ -229,11 +235,12 @@ span {
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-}
+    
+} 
 
 
 .portfolio {
-    background: var(--snd-bg-color);
+    background: #435f63;
 }
 
 .portfolio h2 {
@@ -610,3 +617,54 @@ span {
     text-align: center; /* Text ko center align kiya */
     margin-top:  270px;
 }
+/* Education Section CSS */
+.education {
+    background:#435f63;
+    color: white;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.education .heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education-box {
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-box:hover {
+    transform: scale(1.05);
+}
+
+.education-box h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.education-box p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}       
